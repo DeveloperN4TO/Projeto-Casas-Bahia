@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ImageView
+        style="@style/Style_shape_home"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.03">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/bt_closed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_24"
+            android:background="@color/white"
+            android:clickable="true"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_nome_casas_b"
+        android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Para continuar, insira o seu CPF ou CNPJ"
+            android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Style_shape_botao_cnpj_cpf"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:hint="CPF ou CNPJ"
+            android:importantForAutofill="auto"
+            android:maxLength="14"
+            android:autofillHints="postalCode"
+            android:inputType="number"
+            android:gravity="center|start"
+            android:paddingStart="15dp"
+            android:textStyle="normal"
+            android:textSize="22sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/green"
+            android:text="continuar"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textAllCaps="true"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="____________________ ou ____________________"
+            android:gravity="center"
+            android:textColor="@color/blue2"
+            android:textSize="17dp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <Button
+            style="@style/Style_shape_botao_facebook"
+            android:layout_height="45dp"
+            android:layout_width="match_parent"
+            android:text="Entrar com Facebook"
+            android:drawableStart="@drawable/ic_facebook"
+            android:paddingHorizontal="70dp"
+            android:textSize="20sp"
+            android:textColor="@color/blue"
+            android:textAllCaps="false"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:backgroundTint="@color/blue"
+    tools:ignore="UnusedAttribute">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/Style_Barra_Pesquisa"
+            android:background="@color/white"
+            android:drawableStart="@drawable/lupa_24"
+            android:drawablePadding="15dp"
+            android:paddingStart="10dp"
+            android:hint="@string/procure_nas_casas_bahia"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/darker_gray"
+            tools:ignore="RtlSymmetry" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/microfone_24"
+            app:tint="@color/blue"
+            android:paddingEnd="10dp"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottom_sheet_cep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/insira_seu_cep"
+        android:textStyle="normal"
+        android:drawablePadding="5dp"
+        android:paddingStart="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:onClick="showCepBottomSheet"
+        app:drawableStartCompat="@drawable/location_24"
+        android:focusable="true"
+        tools:ignore="RtlSymmetry,UsingOnClickInXml" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <ImageView
+        style="@style/Style_shape_home"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"/>
+
+</LinearLayout>
+
+
+
+

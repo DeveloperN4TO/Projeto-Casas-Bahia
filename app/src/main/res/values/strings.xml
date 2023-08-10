@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Projeto Casas Bahia</string>
+    <string name="destaques">Destaques</string>
+    <string name="cliente_vip">Cliente VIP</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="carne_digital">Carne Digital</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="voc_visitou">Você visitou</string>
+    <string name="loja_pangeia">Loja Pangeia</string>
+    <string name="faxina">Faxina</string>
+    <string name="tudo_que_a_vida_pede">Tudo que a vida pede</string>
+    <string name="limpeza">Limpeza</string>
+    <string name="procure_nas_casas_bahia">Procure nas Casas Bahia</string>
+    <string name="insira_seu_cep">Insira seu CEP</string>
+    <string name="todo">TODO</string>
+</resources>

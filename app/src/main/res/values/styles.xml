@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="SplashTheme1" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/blue</item> <!-- Define a cor da barra de notificação -->
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme.NoActionBar">
+        <item name="android:windowBackground">@color/blue</item>
+        <item name="android:windowIsTranslucent">false</item> <!-- Certifique-se de que não seja translúcida -->
+    </style>
+
+    <style name="Style_Barra_Pesquisa">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@drawable/drawableshapesearch</item>
+    </style>
+
+    <style name="Style_shape_home">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@drawable/drawableshapehome</item>
+    </style>
+
+    <style name="Style_background_home2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/drawableshapehome2</item>
+    </style>
+
+    <style name="Style_shape_fundo_foto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@drawable/drawableshapebackfoto</item>
+    </style>
+
+    <style name="Style_shape_banner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@drawable/drawableshapebanner</item>
+    </style>
+
+    <style name="Style_shape_banner2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@drawable/drawableshapebanner2</item>
+    </style>
+
+    <style name="Style_shape_botao_entrar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@drawable/shape_botao_entrar</item>
+    </style>
+
+    <style name="Style_shape_botao_cnpj_cpf">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/shape_botao_cpf_cnpj</item>
+    </style>
+
+    <style name="Style_shape_botao_facebook">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/shape_botao_facebook</item>
+    </style>
+
+
+
+</resources>
